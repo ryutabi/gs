@@ -1,8 +1,8 @@
 // jsを記述する際はここに記載していく
 {
   
-  const originPass = [49, 50, 51]; // 123
-  // const originPass = [67, 72, 69, 69, 83, 69, 65, 67, 65, 68, 69, 77, 89]; // cheeseacademy
+  // const originPass = [49, 50, 51]; // 123
+  const originPass = [67, 72, 69, 69, 83, 69, 65, 67, 65, 68, 69, 77, 89]; // cheeseacademy
   let enterPass = []; 
 
 
