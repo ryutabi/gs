@@ -1,0 +1,289 @@
+/* ここから下に記載していく */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.wrapper {
+  max-width: 100%;
+}
+
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+}
+
+.header__logo {
+  padding: 1rem 0;
+}
+
+.header__global-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__global-navigation li {
+  font-size: 1.8rem;
+}
+
+.header__global-navigation li {
+  margin-right: 5rem;
+}
+
+.header__global-navigation li:last-child {
+  margin-right: 0;
+}
+
+.humburger-menu {
+  display: none;
+}
+
+
+/* main */
+.main {
+  text-align: center;
+}
+
+.main__wrapper {
+  padding-top: 6rem;
+}
+
+.main__wrapper h3 {
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+
+.main__wrapper h4 {
+  font-size: 1.8rem;
+  margin-bottom: 6rem;
+}
+
+.main__wrapper p {
+  line-height: 3rem;
+}
+
+.top {
+  background: url("../img/mainbg.png");
+  background-size: cover;
+  width: 100%;
+  padding: 15% 0;
+}
+
+.top__container {
+  color: #fff;
+  letter-spacing: 1rem;
+  font-size: 100%;
+}
+
+.top__title {
+  font-size: 3rem;
+  opacity: .9;
+}
+
+.top__lead {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+#about p {
+  margin-bottom: 3rem;
+}
+
+#about p:last-child {
+  margin-bottom: 0;
+}
+
+.pictures__container {
+  display: flex;
+}
+
+.pictures__container img {
+  padding-top: 6rem;
+  width: 25%;
+  align-self: flex-start;
+}
+
+.course__text {
+  margin-bottom: 6rem;
+}
+
+.course__item__container {
+  display: flex;
+  align-items: center;
+}
+
+.course__item {
+  width: 50%;
+  text-align: left;
+}
+
+.course__item img{
+  width: 100%;
+}
+
+.course__item__text {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.state--reverse {
+  flex-direction: row-reverse;
+}
+
+.state--yellow {
+  color:#ffd61a;
+}
+
+.news__item__container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6rem;
+}
+
+.news__item {
+  max-width: 30rem;
+  margin-right: 3rem;
+}
+
+.news__item:last-child {
+  margin-right: 0;
+}
+
+.news__date {
+  margin-top: 3rem;
+  margin-bottom: 2.4rem;
+}
+
+.news__text {
+  font-size: 1.4rem;
+}
+
+.btn {
+  width: 30rem;
+  padding: 2rem 0;
+  margin: 0 auto 6rem auto;
+  text-align: center;
+  background: #ffd61a;
+  border-radius: .5rem;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  visibility: hidden;
+}
+
+#access {
+  background: #fafafa;
+  padding-bottom: 6rem;
+}
+
+.access__map {
+  margin-bottom: 6rem;
+}
+
+iframe {
+  width: 100%;
+  height: 40rem;
+}
+
+.access__info {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.access__info__list {
+  margin-right: 10rem;
+}
+
+.access__info li {
+  margin-bottom: 3rem;
+}
+
+.access__info li:last-child {
+  margin-bottom: 0;
+}
+
+#contact p {
+  margin-bottom: 3rem;
+}
+
+#contact form {
+  margin-bottom: 14rem;
+  padding-top: 4rem;
+}
+
+.contact__form {
+  border-top: .3rem solid #555;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  width: 50vw;
+}
+
+tr {
+  border-bottom: .1rem solid #dfdfdf;
+  display: flex;
+  align-items: center;
+}
+
+td {
+  padding: 1rem;
+  text-align: left;
+  width: 70%;
+}
+
+td:first-child {
+  width: 20%;
+  padding-right: 3rem;
+}
+
+.contact__form input {
+  padding: .5rem;
+  width: 80%;
+}
+
+.contact__form__select {
+  width: 70%;
+}
+
+.contact__form__checkbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__form__checkbox input[type="checkbox"] {
+  width: 5%;
+  font-size: 2rem;
+  margin: 1rem 0 ;
+}
+
+.contact__form textarea {
+  width: 80%;
+  height: 10rem;
+  padding: 1rem;
+}
+
+.contact__form__submit {
+  padding-top: 2rem 0;
+}
+
+.footer__copyright {
+  padding: 3rem 0;
+  background: #777;
+  color: #fff;
+  text-align: center;
+}
