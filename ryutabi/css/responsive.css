@@ -1,0 +1,118 @@
+@media (max-width: 1160px) {
+  .top__heading {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1060px) {
+  .top {
+    /* background-position: ; */
+    padding: 12rem;
+  }
+  .top__heading {
+    width: 80%;
+    letter-spacing: 1rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .top__heading {
+    width: 90%;
+  }
+}
+
+@media (max-width: 900px) {
+  .top {
+    padding: 10rem;
+  }
+  .top__heading {
+    width: 100%;
+  }
+  .works__container li {
+    margin: 0 4rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .top__heading {
+    font-size: 2.4rem;
+    letter-spacing: .8rem;
+  }
+  .works__container li {
+    width: 30rem;
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .top__heading {
+    font-size: 2rem;
+  }
+  .works__container li {
+    width: 32rem;
+    margin-bottom: 5rem;
+    }
+
+}
+
+@media (max-width: 650px) {
+  .top__heading {
+    font-size: 1.8rem;
+    letter-spacing: .7rem;
+
+  }
+}
+
+@media (max-width: 580px) {
+  .top {
+    padding-right: 3rem;
+  }
+  .top__heading {
+    font-size: 1.6rem;
+    letter-spacing: .4rem;
+
+  }
+}
+
+@media (max-width: 420px) {
+  .top {
+    padding-right: 2rem;
+  }
+  .header__navigation ul {
+    font-size: 1.8rem;
+  }
+  .header__navigation li {
+    margin-right: 2rem;
+  }
+  .about__text__item {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .top {
+    padding-right: 1rem;
+  }
+  .top__ryutabi {
+    font-size: 5.5rem;
+  }
+  .top__heading {
+    letter-spacing: .1rem;
+}
+.works__container li {
+    margin: .5rem;
+    margin-bottom: 5rem;
+  }
+  .about__text__item {
+    font-size: 1.2rem;
+  }
+  .about__text__item span {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 340px) {
+  .about__text__item span {
+    font-size: 1.6rem;
+  }
+}
