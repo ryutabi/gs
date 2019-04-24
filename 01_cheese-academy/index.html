@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>チーズアカデミー</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
 
   <!-- この中に記述していく -->
-  <div class="wrapper">
+  <div class="wrapper" id="all">
     <!-- header -->
     <header class="header">
       <div class="header__logo__container">
@@ -24,12 +28,16 @@
       </div>
       <div class="header__global-navigation__container tb">
         <nav>
-          <ul class="header__global-navigation ">
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#course">COURSE</a></li>
-            <li><a href="#news">NEWS</a></li>
-            <li><a href="#access">ACCESS</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+          <ul class="header__global-navigation">
+            <li>
+              <div id="btn"><i class="fas fa-microphone"></i></div>
+            </li>
+            <li><a href="#about" class="act">ABOUT</a>
+            </li>
+            <li><a href="#course" class="act">COURSE</a></li>
+            <li><a href="#news" class="act">NEWS</a></li>
+            <li><a href="#access" class="act">ACCESS</a></li>
+            <li><a href="#contact" class="act">CONTACT</a></li>
           </ul>
         </nav>
       </div>
@@ -46,21 +54,21 @@
     <main class="main">
       <section class="top">
         <div class="top__container">
-          <h2 class="top__lead">セカイを変えるチーズを作ろう</h2>
-          <h1 class="top__title">チーズ職人養成学校 チーズアカデミー TOKYO</h1>
+          <h2 class="top__lead act">セカイを変えるチーズを作ろう</h2>
+          <h1 class="top__title act">チーズ職人養成学校 チーズアカデミー TOKYO</h1>
         </div>
       </section>
       <!-- aboutページ -->
       <section id="about">
         <div class="main__wrapper sp__container">
-          <h3 class="state--yellow">ABOUT</h3>
+          <h3 class="state--yellow act">ABOUT</h3>
           <h4>チーズアカデミーについて</h4>
           <p>チーズアカデミーは、チーズ職人養成学校です。</p>
           <p>チーズの素晴らしさを、自給自足を通じて、できるだけ多くの人に知っていただきたい。<br>
-              そして、食卓にはいつもチーズがあった、あの頃の当たり前をこの手で取り戻したい。 </p>
+            そして、食卓にはいつもチーズがあった、あの頃の当たり前をこの手で取り戻したい。 </p>
           <p>そんな思いから、チーズ職人養成学校「チーズアカデミーTOKYO」は歩みを始めています。</p>
           <p>卒業後、チーズ自給自足のバックアップはもちろんのこと、<br>
-              チーズ職人への就職・転職もサポートします。</p>
+            チーズ職人への就職・転職もサポートします。</p>
         </div>
       </section>
       <!-- pictures -->
@@ -75,7 +83,7 @@
       <!-- courseページ -->
       <section id="course">
         <div class="main__wrapper">
-          <h3>COURSE</h3>
+          <h3 class="act">COURSE</h3>
           <p class="course__text sp__container">
             未経験からでもスタートができるよう、カリキュラムは多くの専門家や<br>
             現役チーズ職人のアドバイスのもと、作られました。
@@ -136,9 +144,9 @@
       <!-- newsページ -->
       <section id="news">
         <div class="main__wrapper">
-          <h3 class="state--yellow">NEWS</h3>
+          <h3 class="state--yellow act">NEWS</h3>
           <h4>ニュース</h4>
-          <div class="news__item__container">
+          <div class=" news__item__container">
             <div class="news__item tb sp">
               <img src="img/news_img.jpg" alt="">
               <p class="news__date">2016/11/18</p>
@@ -167,13 +175,13 @@
               </p>
             </div>
           </div>
-          <div class="news__more btn">More</div>
+          <div class="news__more btn act">More</div>
         </div>
       </section>
       <!-- accessページ -->
       <section id="access">
         <div class="main__wrapper">
-          <h3>ACCESS</h3>
+          <h3 class="act">ACCESS</h3>
           <h4>会社概要</h4>
           <div class="access__map">
             <iframe src="https://maps.google.co.jp/maps?output=embed&q=G's ACADEMY TOKYO"></iframe>
@@ -211,7 +219,7 @@
           </p>
           <form>
             <table class="contact__form">
-              <tr >
+              <tr>
                 <td><label for="">名前</label></td>
                 <td><input type="text"></td>
               </tr>
@@ -232,7 +240,7 @@
                     <option>SNS</option>
                     <option>紹介</option>
                     <option>たまたま通りかかった</option>
-                    <option>その他</option>     
+                    <option>その他</option>
                   </select>
                 </td>
               </tr>
@@ -246,20 +254,20 @@
                 </td>
               </tr>
               <tr>
-                  <td><label for="">詳細</label></td>
-                  <td><textarea></textarea></td>
-                </tr>
+                <td><label for="">詳細</label></td>
+                <td><textarea></textarea></td>
+              </tr>
             </table>
-            <div class="contact__form__submit btn">送信</div>
+            <div class="contact__form__submit btn act">送信</div>
           </form>
         </div>
       </section>
     </main>
-    
+
     <!-- footer -->
     <footer class="footer">
       <div class="footer__copyright">
-        <p><span>☻</span> copyrights 2016 Cheeese Academy Tokyo All RIghts Reserved.</p>
+        <p class="act">☻ copyrights 2016 Cheeese Academy Tokyo All RIghts Reserved.</p>
       </div>
     </footer>
   </div>
@@ -268,4 +276,5 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>

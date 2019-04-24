@@ -28,9 +28,6 @@
   .top__heading {
     width: 100%;
   }
-  .works__container li {
-    margin: 0 4rem;
-  }
 }
 
 @media (max-width: 800px) {
@@ -40,7 +37,6 @@
   }
   .works__container li {
     width: 30rem;
-    margin: 0 2rem;
   }
 }
 

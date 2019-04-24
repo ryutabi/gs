@@ -194,7 +194,6 @@ body {
 }
 
 #access {
-  background: #fafafa;
   padding-bottom: 6rem;
 }
 
@@ -294,4 +293,22 @@ td:first-child {
   background: #777;
   color: #fff;
   text-align: center;
+}
+
+#btn {
+  cursor: pointer;
+}
+
+.state--active {
+  animation: flash 1s ease infinite alternate;
+}
+
+@keyframes flash {
+  50% {
+    opacity: 0;
+  }
+}
+
+.hidden {
+  display: none;
 }
