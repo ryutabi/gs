@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP|Zeyada');
+
+.hidden {
+  display: none;
+}
+body {
+  text-align: center;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+h1 {
+  font-size: 5rem;
+  letter-spacing: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* スタート画面 */
+#startSubmit {
+  padding-top: 5rem;
+}
+#login {
+  font-size: 2.4rem;
+  width: 20rem;
+  border-radius: 1rem;
+  padding: .5rem;
+}
+#login::placeholder {
+  font-size: 1.6rem;
+}
+.top-img__container {
+  padding-top: 10rem;
+}
+
+/* 入室画面 */
+#roomContainer {
+  width: 30rem;
+  padding: 4rem 5rem 3rem; 
+  margin: 5rem auto 0;
+  border-top: 1px solid #eee;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+#createRoom {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid #67c5ff;
+  color: #67c5ff;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  transition: .4s;
+}
+#createRoom:hover {
+  background: #67c5ff;
+  color: #fff;
+}
+#inputRoomNum {
+  display: block;
+  margin: 1rem auto;
+  width: 10rem;
+  font-size: 1.8rem;
+  border-radius: 1rem;
+  padding: .5rem;
+}
+#inputRoomNum::placeholder {
+  font-size: 1.2rem;
+}
+#errorMessage {
+  color: #ff0000;
+}
+
+/* じゃんけん画面 */
+#navInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70rem;
+  margin: 2rem auto;
+}
+.info {
+  text-align: left;
+  margin-right: 3rem;
+  font-size: 2rem;
+}
+#logout, #againBtn {
+  font-size: 2rem;
+  border-radius: .5rem;
+  border: 1px solid #ccc;
+  padding: 0 .5rem;
+  cursor: pointer;
+}
+#logout:hover, #againBtn:hover {
+  box-shadow: 0 0 .8rem rgba(0,0,0,.3);
+  transition: .3s;
+}
+#againBtn {
+  position: absolute;
+  top: -9rem;
+  font-size: 3rem;
+}
+#battleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0 auto;
+  width: 70rem;
+  user-select: none;
+}
+#selectedMyHand, #selectedEnemyHand {
+  width: 26rem;
+  height: 26rem;
+  line-height: 26rem;
+  font-size: 16rem;
+  border-radius: 50%;
+}
+#selectField {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.hand {
+  font-size: 6rem;
+  text-align: center;
+  width: 10rem;
+  height: 10rem;
+  line-height: 10rem;
+  margin: 3rem;
+  background: #eee;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+}
+.selected {
+  background: rgb(255, 99, 71, 0.8);
+}
+#vs {
+  font-family: 'Zeyada', cursive;
+  font-size: 10rem;
+}
+
+/* 点滅CSS */
+.waiting {
+  animation: flash 1.5s ease infinite alternate;
+}
+@keyframes flash {
+  50% {
+    opacity: 0;
+  }
+}
