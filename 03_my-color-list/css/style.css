@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+    }
+
+    hr {
+      max-width: 30rem;
+    }
+
+    table {
+      margin: 0 auto;
+    }
+
+    td {
+      font-size: 1.4rem;
+    }
+
+    .input-color__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      padding-top: 3rem;
+    }
+
+    .add-btn {
+      display: inline-block;
+      padding: .8rem 1rem;
+      border-radius: 1.4rem;
+      text-decoration: none;
+      color: #FFF;
+      font-size: 1rem;
+      background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+      transition: .4s;
+      cursor: pointer;
+    }
+
+    .add-btn:hover {
+      background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+    }
+
+    #inputColor {
+      font-size: 2rem;
+      width: 8rem;
+      border-radius: .5rem;
+      text-align: left;
+      margin-left: .3rem;
+      margin-right: 1rem;
+    }
+
+    #inputColor::placeholder {
+      font-size: 1rem;
+    }
+
+    #sample {
+      width: 18rem;
+      height: 14rem;
+      margin: 2rem auto 3rem;
+      border: 1px solid #eee;
+      border-radius: 1rem;
+    }
+
+    .color-list__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 30rem;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .all-delete {
+      width: 3rem;
+      height: 2rem;
+      border-radius: 1rem;
+      position: absolute;
+      right: 2rem;
+      cursor: pointer;
+    }
+    .all-delete:hover {
+      background: #333;
+      color: #fff;
+      transition: .4s;
+    }
+
+    .color-sample {
+      padding: 1.6rem 2rem;
+      border-radius: 1rem;
+      border: .5px solid #ccc;
+    }
+
+    .hex-code {
+      width: 8rem;
+      cursor: pointer;
+    }
+
+    .rgb-code {
+      width: 16rem;
+      cursor: pointer;
+    }
+
+    .item-delete {
+      cursor: pointer;
+    }
