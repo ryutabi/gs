@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>δ Reversi</title>
+
+</head>
+
+<body>
+
+  <div id="startWrapper">
+    <h1>δ Reversi</h1>
+    <div id="settingContainer">
+      <div>
+        <p>
+          ボードサイズ：
+          <input type="number" value=8 step="2" min="4" max="100" placeholder="偶数" id="inputBoardSize">
+        </p>
+      </div>
+      <div>
+        <p>黒：
+          <select name="status" id="blackStatus">
+            <option value="player">Player</option>
+            <option value="computer">Computer</option>
+          </select>
+        </p>
+        <p>白：
+          <select name="status" id="whiteStatus">
+            <option value="player">Player</option>
+            <option value="computer">Computer</option>
+          </select>
+        </p>
+        <p>赤：
+          <select name="status" id="redStatus">
+            <option value="player">Player</option>
+            <option value="computer">Computer</option>
+          </select>
+        </p>
+        <p>青：
+          <select name="status" id="blueStatus">
+            <option value="player">Player</option>
+            <option value="computer">Computer</option>
+          </select>
+        </p>
+      </div>
+    </div>
+    <div id="startBtn" onclick="init()">Start</div>
+  </div>
+
+  <div id="stateContainer" class="hidden">
+    <div id="warState">
+      <p id="blackState"></p>
+      <p id="whiteState"></p>
+      <p id="redState"></p>
+      <p id="blueState"></p>
+    </div>
+    <p id="sumTotal"></p>
+    <p id="navMessage"></p>
+  </div>
+
+
+  <script src="js/main.js"></script>
+  <script src="js/flip.js"></script>
+
+</body>
+
+</html>

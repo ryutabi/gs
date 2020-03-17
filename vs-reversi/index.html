@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/game.css">
+  <title>vsReversi</title>
+</head>
+
+<body>
+  <!-- ログインフォーム -->
+  <form id="loginForm">
+    <h1>vsReversi</h1>
+    <input type="text" id="login" autocomplete="off" placeholder="Enter your name">
+    <div class="top-img">
+      <img src="img/vsReversi-top.jpg">
+    </div>
+  </form>
+
+  <!-- インフォメーション -->
+  <div id="infoContainer" class="hidden">
+    <div class="information">
+      <div id="roomInfo">
+        <div>
+          <div id="logout">Exit</div>
+        </div>
+        <div class="info">
+          <p id="room"></p>
+          <p id="name"></p>
+        </div>
+      </div>
+      <!-- セレクトボードサイズ -->
+      <div id="selectSizeContainer" class="hidden">
+        <form id="selectSize">
+          <input type="number" value="8" step="2" min="4" max="100" placeholder="偶数" id="inputBoardSize">
+          <div id="startBtn" onclick="gameStart()">START</div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ロビー（ルーム・チャット） -->
+  <div id="robbyContainer" class="hidden">
+    <div id="robby">
+      <div id="roomContainer">
+        <div id="createRoom" class="create-room" onclick="createNewRoom()">New room</div>
+        <form id="enterRoom">
+          <label for="inputRoomId">Enter by Room ID</label>
+          <input type="text" id="inputRoomId" placeholder="Room ID" autocomplete="off">
+          <p id="errorMessage"></p>
+        </form>
+      </div>
+      <div class="robby-msg__container">
+        <ul id="robbyMsgList"></ul>
+        <form id="robbyMsgForm">
+          <input type="text" id="robbyMsgInput" placeholder="your message..." autocomplete="off">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ゲーム -->
+  <div id="gameContainer" class="hidden">
+    <div class="game__container">
+      <!-- ルームチャット -->
+      <div class="game-msg__container">
+        <ul id="gameMsgList"></ul>
+        <form id="gameMsgForm">
+          <input type="text" id="gameMsgInput" placeholder="your message..." autocomplete="off">
+        </form>
+      </div>
+      <!-- Reversi -->
+      <div class="reversi__container">
+        <table id="table"></table>
+        <div id="stateContainer" class="hidden">
+          <div id="warState">
+            B:&ensp;<p id="blackState"></p>
+            <p id="whiteState"></p>&ensp;:W
+          </div>
+          <p id="sumTotal"></p>
+          <p id="navMessage"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+  <script src="js/fb.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/message.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/reversi.js"></script>
+
+</body>
+
+</html>

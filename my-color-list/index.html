@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Color List</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <div>
+    <div>
+      <form class="input-color__container">
+        # <input type="text" id="inputColor" onkeyup="changeColor()" maxlength="6" placeholder="Color Code"
+          autocomplete="off">
+        <button onclick="addLocalStorage()" class="add-btn">Add</button>
+      </form>
+      <div id="sample"></div>
+    </div>
+    <hr>
+    <div class="color-list__container">
+      <h1>My Color List</h1>
+      <button class="all-delete" onclick="allDelete()">All Delete</button>
+    </div>
+    <table id="colorList"></table>
+  </div>
+
+
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
