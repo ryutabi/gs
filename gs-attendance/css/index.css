@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  background: #1aa8e7;
+  padding: 0 5rem;
+}
+
+.header__logo__container {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  width: 12rem;
+}
+
+.header__logo img {
+  width: 100%;
+}
+
+.header__title {
+  font-family: 'Roboto Slab', serif;
+  letter-spacing: .2rem;
+}
+
+.header__clock {
+  width: 18rem;
+  margin: auto 5rem;
+  font-size: 2rem;
+  font-style: italic;
+  letter-spacing: .1rem;
+}
+
+#time {
+  text-align: right;
+}
+
+
+/* main */
+main {
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.students {
+  display: flex;
+  justify-content: center;
+}
+
+#studentsId {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}

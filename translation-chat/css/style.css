@@ -1,0 +1,84 @@
+.msg__container {
+  width: 50rem;
+  margin: 3rem auto 1rem;
+}
+
+#messagesList {
+  background: #7494c0;
+  width: 100%;
+  height: 70rem;
+  overflow-x: hidden;
+  padding: 1rem;
+}
+
+
+.functions {
+  display: flex;
+  align-items: center;
+}
+
+#selectLangs {
+  font-size: 2rem;
+}
+
+#mic {
+  margin: 0 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#textArea {
+  font-size: 2.4rem;
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+.mine-msg {
+  display: flex;
+  justify-content: flex-end;
+}
+.another-msg {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.msg {
+  margin: 1rem;
+  padding: .5rem;
+  border-radius: 1rem;
+  display: inline-block;
+  max-width: 70%;
+  cursor: pointer;
+}
+
+.mine {
+  margin-left: 20%;
+  background: #8de055;
+  position: relative;
+
+}
+.mine::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: 100%;
+  border: .6rem solid transparent;
+  border-left: 1rem solid #8de055;
+}
+
+.another {
+  background: #fff;
+  position: relative;
+
+}
+.another::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: -1.6rem;
+  border: .6rem solid transparent;
+  border-right: 1rem solid #fff;
+}

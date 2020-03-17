@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding :0;
+}
+
+.container {
+    width: 320px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+#cpu {
+    height: 320px;
+    line-height: 320px;
+    font-size: 250px;
+    user-select: none;
+}
+
+#result {
+    position: absolute;
+    top: 240px;
+    width: 100%;
+    font-size: 50px;
+    color: #fff;
+    opacity: 0.8;
+}
+
+#start {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    height: 200px;
+    width: 200px;
+    line-height: 200px;
+    font-size:  60px;
+    border-radius: 50%;
+    background-color: #00ff33;
+    box-shadow: 0 7px #00cc33;
+    border: 2px solid #00cc33;
+    cursor: pointer;
+    user-select: none;
+    opacity: 0.7;
+}
+
+#start:hover {
+    opacity: 1;
+}
+
+#start:active {
+    margin-top: 5px;
+    box-shadow: 0 2px #00cc33;
+}
+
+#oneMore {
+    position: absolute;
+    top: 210px;
+    left: 60px;
+    line-height: 50px;
+    padding: 20px;
+    opacity: 0.7;
+    font-size: 30px;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: orange;
+}
+
+#oneMore:hover {
+    opacity: 0.9;
+}
+
+#oneMore:active {
+    margin-top: 5px;
+    box-shadow: 0 2px #00cc33;
+}
+
+#message {
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+.btn__container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.btn {
+    width: 80px;
+    height: 75px;
+    line-height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    font-size: 60px;
+    background-color: #ffffcc;
+    box-shadow: 0 5px #ffff66;
+    opacity: 1;
+}
+
+.btn.pushed{
+    box-shadow: 0 2px #ff0000;
+    margin-top: 3px;
+    background-color: #ff3366;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.showWin {
+    visibility: visible;
+    background-color: #ff0000;
+}
+
+#coin__container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    position: absolute;
+    top: 480px;
+}
+
+#coin {
+    width: 40px;
+    height: 40px;
+    background: gold;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    box-shadow: 0 0 0 4px gold;
+    margin-right: 13px;
+}
+
+#coin:first-child {
+    margin-left: 4px;
+}
+
+#coin:last-child {
+    margin-right: 0;
+}
+
+.gs-logo {
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;
+}
