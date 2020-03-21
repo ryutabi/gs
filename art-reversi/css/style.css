@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  line-height: 0;
+  margin: 3rem auto 1rem;
+}
+
+td {
+  width: 39px;
+  height: 39px;
+  background: #148714;
+  border: .5px solid rgb(255, 255, 255);
+  position: relative;
+}
+
+.color {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.white {
+  background: #ffffff;
+}
+.black {
+  background: #000000;
+}
+.red {
+  background: #ff0000;
+}
+.blue {
+  background: #0000ff;
+}
+.green {
+  background: #00ff00;
+}
+.yellow {
+  background: #ffff00;
+}
+.pink {
+  background: #ff00ff;
+}
+.sky {
+  background: #00ffff;
+}
+
+
+.orange {
+  background: #ff8c00;
+}
+
+.purple {
+  background: #800080;
+}
+
+
+
+div {
+  text-align: center;
+}
+
+.frame {
+  background: #000;
+  width: 1rem;
+  height: 1rem;
+  border: none;
+}

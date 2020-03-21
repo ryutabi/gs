@@ -1,0 +1,115 @@
+/* ルーム内のチャット */
+.black-msg {
+  color: #000;
+}
+.white-msg {
+  color: #fff;
+}
+.red-msg {
+  color: #f00;
+}
+.blue-msg {
+  color: #00f;
+}
+
+
+/* Reversi */
+.game__container {
+  display: flex;
+}
+
+table {
+  border-collapse: collapse;
+  line-height: 0;
+  margin: 0 auto;
+}
+
+td {
+  width: 39px;
+  height: 39px;
+  background: #148714;
+  border: .5px solid rgb(255, 255, 255);
+  position: relative;
+}
+
+.black,
+.white,
+.red,
+.blue {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.black {
+  background: #000;
+}
+.white {
+  background: #fff;
+}
+.red {
+  background: #f00;
+}
+.blue {
+  background: #00f;
+}
+
+.frame {
+  background: #000;
+  width: 1rem;
+  height: 1rem;
+  border: none;
+}
+
+#stateContainer {
+  text-align: center;
+}
+
+#warState {
+  width: 30rem;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+}
+
+#blackState {
+  height: 1.6rem;
+  background: #000;
+  border: 1px solid #000;
+}
+#whiteState {
+  height: 1.6rem;
+  background: #fff;
+  border: 1px solid #000;
+}
+#redState {
+  height: 1.6rem;
+  background: #f00;
+  border: 1px solid #000;
+}
+#blueState {
+  height: 1.6rem;
+  background: #00f;
+  border: 1px solid #000;
+}
+
+#sumTotal, #navMessage {
+  font-size: 2rem;
+}
+
+.can-put__nav {
+  opacity: 0.75;
+}
+
+.win {
+  color: #f00;
+  font-size: 2rem;
+}
+.draw {
+  color: #000;
+  font-size: 2rem;
+}

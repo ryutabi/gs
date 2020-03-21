@@ -1,0 +1,123 @@
+/* ルーム内のチャット */
+.room-msg {
+  position: relative;
+  margin: 1rem 0;
+  padding: .5rem;
+  width: 80%;
+  border-radius: 1rem;
+}
+
+.mine {
+  margin-left: 20%;
+  background: #8de055;
+}
+.mine::before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 100%;
+  border: .6rem solid transparent;
+  border-left: 1rem solid #8de055;
+}
+
+.another {
+  background: #fff;
+}
+.another::before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: -9%;
+  border: .6rem solid transparent;
+  border-right: 1rem solid #fff;
+}
+
+
+/* Reversi */
+.game__container {
+  display: flex;
+}
+.reversi__container {
+
+}
+
+table {
+  border-collapse: collapse;
+  line-height: 0;
+  margin: 0 auto;
+}
+
+td {
+  width: 39px;
+  height: 39px;
+  background: #148714;
+  border: .5px solid rgb(255, 255, 255);
+  position: relative;
+}
+
+.black,
+.white {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.black {
+  background: #000;
+}
+
+.white {
+  background: #fff;
+}
+
+.frame {
+  background: #000;
+  width: 1rem;
+  height: 1rem;
+  border: none;
+}
+
+#stateContainer {
+  text-align: center;
+}
+
+
+#warState {
+  width: 30rem;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+}
+
+#blackState {
+  height: 1.6rem;
+  background: #000;
+  border: 1px solid #000;
+}
+
+#whiteState {
+  height: 1.6rem;
+  background: #fff;
+  border: 1px solid #000;
+}
+
+#sumTotal {
+  font-size: 2rem;
+}
+
+#navMessage {
+  font-size: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.can-put__nav {
+  background: #ff0000;
+  opacity: 0.7;
+}

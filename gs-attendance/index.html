@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>G's Attendance</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <header>
+    <div class="header__logo__container">
+      <div class="header__logo">
+        <img src="img/gs-logo.png">
+      </div>
+      <h1 class="header__title">G's Attendance</h1>
+    </div>
+    <div class="header__clock">
+      <p id="date"></p>
+      <p id="time"></p>
+    </div>
+  </header>
+    
+  <main>
+    <form class="students" action="./php/attend.php" method="POST">
+      <select id="studentsId" name="sid" onchange="submit(this.form)">
+        <option value="">選択してください</option>
+      </select>
+    </form>
+  </main>
+
+
+  <div id="mask"></div>
+
+  <section></section>
+
+
+
+
+  <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+.hidden {
+  display: none;
+}
+.no-visibility {
+  visibility: hidden;
+}
+
+
+/* ログインフォーム */
+#loginForm {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  padding-top: 5rem;
+  letter-spacing: 1rem;
+  text-align: center;
+  font-size: 5rem;
+  color: #000;
+}
+
+#login {
+  font-size: 2.4rem;
+  width: 20rem;
+  border-radius: 1rem;
+  padding: .5rem;
+}
+#login::placeholder {
+  font-size: 1.6rem;
+}
+
+.top-img {
+  margin-top: 8rem;
+}
+
+
+/* インフォメーション */
+
+.information {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;}
+
+#roomInfo {
+  display: flex;
+  align-items: center;
+}
+
+.info {
+  margin-right: 7rem;
+}
+
+#logout, #again {
+  width: 7rem;
+  height: 7rem;
+  line-height: 7rem;
+  border: 1px solid #148714;
+  color: #148714;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 3rem;
+  cursor: pointer;
+  transition: .4s;
+}
+#logout:hover, #again:hover {
+  border: 1px solid #fff;
+  color: #fff;
+  background: #148714;
+}
+/* セレクトボードサイズ */
+
+#selectSize {
+  display: flex;
+  align-items: center;
+  margin-left: 5rem;
+}
+
+#inputBoardSize {
+  font-size: 2.4rem;
+  width: 8rem;
+  margin: 0 2rem 0 1rem;
+  border-radius: 1rem;
+  padding: .3rem;
+}
+
+#startBtn {
+  display: inline;
+  padding: .3rem 1rem;
+  border-radius: 1rem;
+  color: #148714;
+  background: #fff;
+  border: 1px solid #148714;
+  cursor: pointer;
+  transition: .4s;
+}
+#startBtn:hover {
+  color: #fff;
+  background: #148714;
+  border: 1px solid #fff;
+}
+
+
+.recruiting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20rem;
+}
+
+#nowMax {
+  font-size: 2rem;
+}
+
+#howMany {
+  animation: flash 1.5s ease infinite alternate;
+}
+@keyframes flash {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+/* ロビー */
+#robby {
+  display: flex;
+  justify-content: space-between;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+#roomContainer {
+  text-align: center;
+  box-shadow: 0 3px 5px rgba(0, 0, 0);
+  width: 35%;
+  height: 100%;
+  padding: 5rem 0;
+}
+
+.create-room {
+  width: 60%;
+  margin: 2rem auto;
+  cursor: pointer;
+  font-size: 2.4rem;
+  background: #fff;
+  border: 1px solid #148714;
+  color: #148714;
+  border-radius: 1rem;
+  transition: .4s;
+}
+.create-room:hover {
+  background: #148714;
+  border: 1px solid #148714;
+  color: #fff;
+}
+
+#inputRoomId {
+  display: block;
+  margin: 1rem auto;
+  width: 12rem;
+  font-size: 2rem;
+  border-radius: 1rem;
+  padding: .5rem;
+}
+
+#errorMessage {
+  color: #f00;
+  font-weight: bold;
+}
+
+/* チャット */
+.robby-msg__container {
+  width: 50%;
+}
+
+.game-msg__container {
+  width: 30rem;
+  margin: 0 10rem 0 3rem;
+}
+
+#robbyMsgList, #gameMsgList {
+  width: 100%;
+  height: 40rem;
+  overflow-x: hidden;
+  margin: 0 auto;
+  padding: 1rem;
+  box-shadow: 0 3px 5px rgba(0, 0, 0);
+}
+
+#gameMsgList {
+  background: #148714;
+}
+
+#robbyMsgInput, #gameMsgInput {
+  width: 100%;
+  font-size: 2rem;
+  padding: .5rem;
+  margin-top: .5rem;
+}
+
+span {
+  opacity: .6;
+}

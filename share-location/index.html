@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Share Location</title>
+</head>
+<body>
+
+  <form id="loginForm">
+    <input type="text" id="login" placeholder="名前を入力してください" autocomplete="off">
+    <div id="loginBtn" onclick="mapLogin()">LOGIN</div>
+  </form>
+
+  <div class="loading hidden" id="loader"></div>
+
+  <div id="logoutBtn" class="hidden" onclick="authLogout()">Logout</div>
+  <div id="myMap" style='width:100%;height:98%;'></div>
+
+
+  
+  <!-- [ MapTypeId ] https://msdn.microsoft.com/en-us/library/mt712700.aspx -->
+  <script src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AioiIYuWQKX7YruDVM4tdmlOvnfElEInitW62Y37Mpw9Ht9DeEklbeAMg0nEwCq0' async defer></script>
+  <script src="js/BmapQuery.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+
+  <script src="js/fb.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/position.js"></script>
+  <script src="js/bingMaps.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
